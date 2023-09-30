@@ -1,0 +1,28 @@
+class Library {
+public:
+    void addBook(const Book& book) {
+        books.push_back(book);
+    }
+
+    void removeBook(const string& title) {
+        for (auto it = books.begin(); it != books.end(); ++it) {
+            if (it->getTitle() == title) {
+                books.erase(it);
+                break;
+            }
+        }
+    }
+
+    void displayBooks() const {
+        cout << "Books in the library:" << endl;
+        for (const Book& book : books) {
+            cout << "Title: " << book.getTitle() << endl;
+            cout << "Author: " << book.getAuthor() << endl;
+            cout << "Year: " << book.getYear() << endl;
+            cout << "------------------------" << endl;
+        }
+    }
+
+private:
+    vector<Book> books;
+};
