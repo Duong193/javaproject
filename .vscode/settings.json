@@ -2,5 +2,8 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "quanlysinhvien": "cpp"
-    }
+    },
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
 }
