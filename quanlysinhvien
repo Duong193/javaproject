@@ -9,7 +9,3 @@ struct SinhVien {
     float diemTB = 0;
     char hocluc[10] = "-";
 };
-struct Sinhvien1 {
-    char ten[40];
-    
-}
